@@ -1,0 +1,24 @@
+\usepackage[left=2.50cm, right=2.50cm, top=2.00cm, bottom=2.00cm]{geometry}
+\usepackage{authblk}
+
+\renewcommand*{\Authsep}{, }
+\renewcommand*{\Authand}{, }
+\renewcommand*{\Authands}{, }
+\renewcommand*{\Affilfont}{\normalsize}
+%\renewcommand*{\Authfont}{\bfseries}    % make author names boldface    
+\setlength{\affilsep}{2em}   % set the space between author and affiliation
+
+\author[1]{Aditya Sengupta \thanks{adityasenguptasai99@gmail.com}}
+\author[1*]{Bbbbb Bb \thanks{someemail.com}}
+\author[2]{Ccccccc Ccc \thanks{someothermail.com}}
+\affil[1]{Dept. of Earth and Atmospheric Science, National Insitute of Technology, Rourkela} 
+\affil[2]{AAAAAA Laboratory, University of AAAAA BBBBBB, XXXXX 303939, Z Country}
+
+\usepackage{float}
+	\let\origfigure\figure
+	\let\endorigfigure\endfigure
+	\renewenvironment{figure}[1][2] {
+		\expandafter\origfigure\expandafter[H]		
+	} {
+		\endorigfigure
+	}
